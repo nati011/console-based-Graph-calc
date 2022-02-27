@@ -1,1 +1,1 @@
-# console-based-Graph-calc
+# Console-based-Graph-Calc
