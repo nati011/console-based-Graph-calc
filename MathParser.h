@@ -172,7 +172,7 @@ double Evaluate(string tokens)
 //This function substitutes the variables in expression to the values of argument x
 //input: value x
 //output: expression
-/*string substitute(string data, string toSearch, string replaceStr)
+string substitute(string data, string toSearch, string replaceStr)
 {
     // Get the first occurrence
     size_t pos = data.find(toSearch);
@@ -186,7 +186,7 @@ double Evaluate(string tokens)
     }
     return data;
 }
-*/
+/*
 string substitute(string in_expression, char variable, double val)
 {
 	string out_expression;
@@ -201,3 +201,4 @@ string substitute(string in_expression, char variable, double val)
 	return out_expression;
 }
 
+*/
