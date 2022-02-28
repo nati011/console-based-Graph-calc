@@ -150,7 +150,24 @@ double Evaluate(string tokens)
             ops.push(tokens[i]);
         }
     }
+ // Entire expression has been parsed at this
+    // point, apply remaining ops to remaining
+    // values.
+    while(!ops.empty()){
+        int val2 = values.top();
+        values.pop();
 
+        int val1 = values.top();
+        values.pop();
+
+        char op = ops.top();
+        ops.pop();
+
+        values.push(applyOp(val1, val2, op));
+    }
+
+    // Top of 'values' contains result, return it.
+    return values.top();
 }
 //This function substitutes the variables in expression to the values of argument x
 //input: value x
