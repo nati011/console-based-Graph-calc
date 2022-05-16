@@ -40,7 +40,7 @@ void plot()//string expression_store)
 
 
 }
-//This function draws on the screen buffer by making use of the draw_block function which are defined in the graphics engine
+//This function draws on the screen buffer by making use of the draw_block function is defined in the graphics engine
 void draw_window()
 {
     //draw boarder
